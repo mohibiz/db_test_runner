@@ -1,0 +1,10 @@
+﻿jira_number~test_case~script_id~script_name~resultant_sql~passing_criteria~input_variable~comments~execution_flag
+DART-1~sql_test_1~script1~sqlblock1.sql~select count(*) from sql_block1~(25,)~{'var_subcasenumber' : "'case_0001'"}~For testing Oracle Test runner with one bind Variable and single value passing criteria~Y
+DART-2~sql_test_2~script2~sqlblock2.sql~select count(*) from sql_block2~(1,)~{'var1' : '1'}~For testing Oracle Test runner with one bind Variable and single value passing criteria~Y
+DART-3~sql_test_3~script3~sqlblock3.sql~select count(*) from sql_block3~(1,)~{'var1' : '1' , 'var2' : "'pass'"}~For testing Oracle Test runner with multiple bind Variable and single value passing criteria~Y
+DART-4~sql_test_4~script4~sqlblock4.sql~select * from sql_block4~('test',)~{'var1' : "TO_DATE('''09/07/2020''','''dd/mm/yyy''')"}~For testing Oracle Test runner with one bind Variable and single value passing criteria~Y
+DART-4~sql_test_5~script5~sqlblock5.sql~select * from sql_block5~(1,'i am correct')~{'var1' : '1'}~For testing Oracle SQL in Test runner with one bind Variable and Multiple value in passing criteria~Y
+DART-4~plsql_test_1~script1~plsql_block1.plsql~select c1 from result_table1~('hello there',)~{}~For testing Oracle Test runner for PLSQL with one bind variable~Y
+DART-5~plsql_test_2~script2~plsql_block2.plsql~select c1 from result_table2~('i am the check for number bind variabl',)~{'var_plsql_1' : '2'}~For testing Oracle Test runner for PLSQL with bind variable~Y
+DART-5~plsql_test_3~script3~plsql_block3.plsql~select c1 from result_table3~('multiple bind variables',)~{'var_plsql_1' : '1' , 'var_plsql_2' : "'''xyz'''"}~For testing Oracle Test runner for PLSQL with multiple bind variables~Y
+DART-5~plsql_test_4~script4~plsql_block3.plsql~select c1 from result_table3~~{'var_plsql_1' : '1' , 'var_plsql_2' : "'''xyz'''"}~empty passing criteria is ok~Y
